@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Formulário</title>
+  </head>
+
+  <body>
+    <div class="container">
+        <div class="image">
+          <img src="/img/fundo.jpg" alt="Imagem de Fundo" class="side-image">
+        </div>
+        <div class="form-container">
+          <h1>Cadastro de Adoção de Pet!</h1>
+          <form action="furmulario">
+            <fieldset>
+              <p>Preencha as informações para poder adotar um Pet!</p>
+              <div class="inputBox">
+                <input type="text" name="nome" id="nome" class="inputUser" required />
+                <label class="labelInput">Nome completo</label>
+              </div>
+              <div class="inputBox">
+                <input type="date" name="data" id="data"  required />
+                <label>Data de Nascimento</label>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="email" id="email" class="inputUser" required />
+                <label class="labelInput">Email</label>
+              </div>
+              <div class="inputBox">
+                <input type="tel" name="tel" id="tel" class="inputUser" required/>
+                <label class="labelInput">Telefone</label>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="cidaede" id="endereco" class="inputUser" required />
+                <label class="labelInput">Endereço</label>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="cidaede" id="cidade" class="inputUser" required />
+                <label class="labelInput">Cidade</label>
+              </div>
+              <div class="inputBox">
+                <input type="text" name="cidade" id="estado" class="inputUser" required />
+                <label class="labelInput">Estado</label>
+              </div>
+              <div class="inputBox">
+                <p>Preferência de Adoção de Pet</p>
+                <div class="select-container">
+                    <select id="especie">
+                      <option selected disabled value="">Selecione</option>
+                      <option>Somente Cachorro</option>
+                      <option>Somente Gato</option>
+                      <option>Cachorro e Gato</option>
+                    </select>
+              </div>
+              <div>
+                <label for="observacao" class="labelArea">Diga para nós o que levou você a adotar um amiguinho?</label>
+                <textarea
+                  name="coments"
+                  id="observacao"
+                  cols="40"
+                  rows="10"
+                  class="inputUser custom-textarea"
+                ></textarea>
+              </div>
+    
+              <button type="submit">Enviar</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+  </body>
+</html>
